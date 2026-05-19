@@ -1,0 +1,50 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Output directory for build/deployment
+.vercel
+.vercel/
+
+# Ignore all videos in "Videos I made" directory by default
+Videos I made/*
+
+# Allow specific subdirectories so git can traverse them
+!Videos I made/La-Fiamma_Schöneberg/
+!Videos I made/Ehil_Restaurent/
+!Videos I made/La-Fiamma_Gneisenaustraße/
+!Videos I made/GoldenPack/
+!Videos I made/Eos_Fahrzeugtechnik/
+
+# Ignore all files inside the subdirectories
+Videos I made/La-Fiamma_Schöneberg/*
+Videos I made/Ehil_Restaurent/*
+Videos I made/La-Fiamma_Gneisenaustraße/*
+Videos I made/GoldenPack/*
+Videos I made/Eos_Fahrzeugtechnik/*
+
+# Except the 8 specific videos used in our portfolio HTML
+!Videos I made/La-Fiamma_Schöneberg/002_Viral_Video_02.mp4
+!Videos I made/La-Fiamma_Schöneberg/007_Gen_Z_Viral_Video.mp4
+!Videos I made/La-Fiamma_Schöneberg/008_Vlog_Style_Video_002.mp4
+!Videos I made/Ehil_Restaurent/Ehil Tanitim_Final.mp4
+!Videos I made/Ehil_Restaurent/Ramazan Werbevideo 1_Final.mp4
+!Videos I made/La-Fiamma_Gneisenaustraße/Lafiamma_Edit.mp4
+!Videos I made/GoldenPack/SnapInsta.to_AQMyFMXc3pw71buoE4czH1zte0l0jbFXuiHDGN_hXiR3YWEKgZHYI0nunPh2AFd1gr-b_D7ZcTwqLz9cAsPK7IZUyMswZn3DAslbZR8.mp4
+!Videos I made/Eos_Fahrzeugtechnik/SnapInsta.to_AQOA6g2PWkkF02bH8zL4UaEUT3u7F3quLXZLhVNiVdcOFQCehkm6BBZ-TEkmv_ePtxDKs4mccS1KuQkjZBqoqv2QUJEpstMUa5-wnJs.mp4

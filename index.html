@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Furkan Kocak – Social Media & Video Creator Berlin</title>
+<meta name="description" content="Furkan Kocak – Social Media Creator & Video Marketer aus Berlin. 760K+ Views generiert, 6 Kunden, messbare Ergebnisse. Lass uns dein Business viral machen.">
+<meta property="og:title" content="Furkan Kocak – Social Media Creator Berlin">
+<meta property="og:description" content="760K+ Views generiert. Ich mache dein Business viral.">
+<meta property="og:type" content="website">
+
+<!-- Custom Favicon with Initials FK using inline SVG with beautiful gradient -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23060606'/><text x='50%' y='65%' font-family='system-ui,sans-serif' font-size='48' font-weight='900' fill='url(%23g)' text-anchor='middle'>FK</text><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%25' stop-color='%236a4cf5'/><stop offset='100%25' stop-color='%23d44df0'/></linearGradient></defs></svg>">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- Subtle drifting ambient light background orbs -->
+<div class="bg-orbs-container">
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+  <div class="ambient-orb orb-3"></div>
+  <div class="ambient-orb orb-4"></div>
+</div>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/qr/DVCZ6EKUKMB5J1" target="_blank" class="whatsapp-float" aria-label="WhatsApp Contact">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="container">
+    <a href="#" class="nav-logo">FK<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#projects" data-i18n="navProjects">Projekte</a></li>
+      <li><a href="#analytics" data-i18n="navAnalytics">Ergebnisse</a></li>
+      <li><a href="#reel" data-i18n="navReel">Videos</a></li>
+      <li><a href="#about" data-i18n="navAbout">Über mich</a></li>
+    </ul>
+    <div class="nav-cta">
+      <!-- DE / EN LANGUAGE TOGGLE SWITCH -->
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="changeLang('de')">DE</button>
+        <button class="lang-btn" onclick="changeLang('en')">EN</button>
+      </div>
+      <a href="https://wa.me/qr/DVCZ6EKUKMB5J1" target="_blank" class="btn-secondary" style="padding:9px 16px;font-size:12px;">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="#cta" class="btn-primary" style="padding:9px 16px;font-size:12px;" data-i18n="navContactBtn">Kontakt</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal" data-i18n="heroEyebrow">
+        <span class="dot"></span>
+        Social Media Creator &amp; Video Marketer · Berlin
+      </div>
+      <h1 class="display-xxl hero-title reveal reveal-delay-1" data-i18n="heroTitle">
+        Ich mache dein<br>
+        <span class="line-accent">Business viral.</span>
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2" data-i18n="heroSub">
+        Echte Ergebnisse. Kein Bullshit. Ich produziere Content der konvertiert — von viralen Reels bis zu kompletten Kampagnen, die deinen Umsatz steigern.
+      </p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#reel" class="btn-primary" data-i18n="heroCta1"><i class="fas fa-play"></i> Meine Arbeit sehen</a>
+        <a href="https://wa.me/qr/DVCZ6EKUKMB5J1" target="_blank" class="btn-secondary" data-i18n="heroCta2"><i class="fab fa-whatsapp"></i> Gespräch vereinbaren</a>
+      </div>
+      <div class="hero-social-proof reveal reveal-delay-4">
+        <div class="proof-item">
+          <span class="proof-number" data-count="760000" data-suffix="K+">0</span>
+          <span class="proof-label" data-i18n="proofViews">Views generiert</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-number" data-count="6" data-suffix="">0</span>
+          <span class="proof-label" data-i18n="proofClients">Zufriedene Kunden</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-number" data-count="160" data-suffix="+">0</span>
+          <span class="proof-label" data-i18n="proofHires">Neue Mitarbeiter für Kunden</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-number" data-count="100" data-suffix="%">0</span>
+          <span class="proof-label" data-i18n="proofSuccess">Erfolgsquote der Kampagnen</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-number" data-count="760" data-suffix="K+">0</div>
+        <div class="stat-label" data-i18n="statViews">Gesamte Views</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-number" data-count="400" data-suffix="K+">0</div>
+        <div class="stat-label" data-i18n="statImren">Views – Imren Börekhaus</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-number" data-count="160" data-suffix="+">0</div>
+        <div class="stat-label" data-i18n="statGolden">Neue Stellen – Goldenpack</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-number" data-count="6" data-suffix="">0</div>
+        <div class="stat-label" data-i18n="statActive">Aktive Partnerships</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow" data-i18n="projectEyebrow">Meine Projekte</span>
+      <h2 class="display-lg" data-i18n="projectTitle">Echte Kunden. Echte Ergebnisse.</h2>
+      <p class="body-lg" data-i18n="projectSub">Von kleinen Restaurants bis zu großen Logistikfirmen – hier sind die Kampagnen die ich gebaut und geliefert habe.</p>
+    </div>
+    <div class="bento-grid">
+
+      <!-- Imren – biggest result, violet spotlight -->
+      <div class="bento-card spotlight-violet span-2 reveal">
+        <div class="card-inner">
+          <span class="card-tag" data-i18n="tagTop"><i class="fas fa-fire"></i> Top Performer</span>
+          <div class="card-client">Imren Börekhaus</div>
+          <div class="card-result">400K+ Views</div>
+          <p class="card-desc" data-i18n="descImren">Aus einem kleinen Familienrestaurant wurde ein viraler Instagram-Hit. Das Business wuchs von 1 auf 3–4 Mitarbeiter durch gezielten Content.</p>
+          <div style="display:flex;gap:10px;margin-top:auto;flex-wrap:wrap;">
+            <span style="padding:4px 12px;background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.2);border-radius:999px;font-size:11px;font-weight:700;">Viral Reels</span>
+            <span style="padding:4px 12px;background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.2);border-radius:999px;font-size:11px;font-weight:700;">Markenaufbau</span>
+            <span style="padding:4px 12px;background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.2);border-radius:999px;font-size:11px;font-weight:700;">Instagram</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ehil Restaurant – orange spotlight -->
+      <div class="bento-card spotlight-orange reveal reveal-delay-1">
+        <div class="card-inner">
+          <span class="card-tag" data-i18n="tagAusgebucht"><i class="fas fa-chart-line"></i> Ausgebucht</span>
+          <div class="card-client">Ehil Restaurant</div>
+          <div class="card-result">200K+ Views</div>
+          <p class="card-desc" data-i18n="descEhil">Ramadan komplett ausgebucht durch eine strategische Videokampagne mit 14 professionellen Videos.</p>
+        </div>
+      </div>
+
+      <!-- Goldenpack -->
+      <div class="bento-card reveal reveal-delay-1">
+        <div class="card-inner">
+          <span class="card-tag tag-green" data-i18n="tagRecruiting"><i class="fas fa-users"></i> Recruiting</span>
+          <div class="card-client">Goldenpack Berlin</div>
+          <div class="card-result">160+ Jobs</div>
+          <p class="card-desc" data-i18n="descGolden">Eine komplette Recruiting-Kampagne die über 160 neue Mitarbeiter für Goldenpack Berlin gewann.</p>
+        </div>
+      </div>
+
+      <!-- La-Fiamma Schöneberg – magenta spotlight -->
+      <div class="bento-card spotlight-magenta reveal reveal-delay-2">
+        <div class="card-inner">
+          <span class="card-tag" data-i18n="tagKoop"><i class="fas fa-handshake"></i> Laufende Kooperation</span>
+          <div class="card-client">La-Fiamma Schöneberg</div>
+          <div class="card-result">200K+ Views</div>
+          <p class="card-desc" data-i18n="descSchoneberg">Langfristige Zusammenarbeit mit kontinuierlichem Wachstum. Werbvideos, Viral Content und Kampagnenmanagement.</p>
+        </div>
+      </div>
+
+      <!-- La-Fiamma Gneisenaustraße -->
+      <div class="bento-card reveal reveal-delay-2">
+        <div class="card-inner">
+          <span class="card-tag tag-blue" data-i18n="tagLaunch"><i class="fas fa-rocket"></i> Launch Marketing</span>
+          <div class="card-client">La-Fiamma Gneisenaustr.</div>
+          <div class="card-result">UGC Network</div>
+          <p class="card-desc" data-i18n="descGneisenau">Neueröffnung eines Restaurants – komplettes Launch-Marketing und Aufbau eines UGC Creator-Netzwerks.</p>
+        </div>
+      </div>
+
+      <!-- Eos Fahrzeugtechnik -->
+      <div class="bento-card reveal reveal-delay-3">
+        <div class="card-inner">
+          <span class="card-tag tag-violet" data-i18n="tagDone"><i class="fas fa-check-circle"></i> Abgeschlossen</span>
+          <div class="card-client">Eos Fahrzeugtechnik</div>
+          <div class="card-result">✓ Erfolgreich</div>
+          <p class="card-desc" data-i18n="descEos">Vollständiges Kampagnenmanagement für einen Berliner Fahrzeugtechnik-Betrieb. Strategie, Content &amp; Distribution.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ANALYTICS & VIRALITY SCIENCE -->
+<section id="analytics">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow" data-i18n="analyticsEyebrow">Analytics &amp; Science</span>
+      <h2 class="display-lg" data-i18n="analyticsTitle">Die Zahlen sprechen für sich.</h2>
+      <p class="analytics-subtitle" data-i18n="analyticsSub">Datengetriebener Content der virale Algorithmen knackt. Hier ist die genaue Wissenschaft hinter unseren Reels.</p>
+    </div>
+    
+    <!-- Three advanced analytical charts -->
+    <div class="charts-grid">
+      <div class="chart-card reveal">
+        <div class="chart-title" data-i18n="chart1Title">Views pro Kunde</div>
+        <div class="chart-value">760K+ Total</div>
+        <div class="chart-canvas-wrap">
+          <canvas id="chartViews" height="200"></canvas>
+        </div>
+      </div>
+      <div class="chart-card reveal reveal-delay-1">
+        <div class="chart-title" data-i18n="chart2Title">Algorithmus-Gewichtung</div>
+        <div class="chart-value">TikTok / Reels</div>
+        <div class="chart-canvas-wrap">
+          <canvas id="chartAlgorithm" height="200"></canvas>
+        </div>
+      </div>
+      <div class="chart-card reveal reveal-delay-2">
+        <div class="chart-title" data-i18n="chart3Title">Hook &amp; Retentions-Kurve</div>
+        <div class="chart-value">Completion Rate</div>
+        <div class="chart-canvas-wrap">
+          <canvas id="chartRetention" height="200"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Science breakdown info cards -->
+    <div class="science-grid reveal reveal-delay-3">
+      <div class="science-card">
+        <div class="science-icon"><i class="fas fa-magnet"></i></div>
+        <h3 class="science-title" data-i18n="scienceTitle1">3-Sekunden Hook</h3>
+        <p class="science-desc" data-i18n="scienceDesc1">Die ersten 3 Sekunden entscheiden alles. Wir verwenden dynamische Visuals, Text-Overlays und psychologische Hook-Formeln, um die Zuschauer-Aufmerksamkeit sofort zu sichern.</p>
+      </div>
+      <div class="science-card">
+        <div class="science-icon"><i class="fas fa-tachometer-alt"></i></div>
+        <h3 class="science-title" data-i18n="scienceTitle2">Audience Retention (Pacing)</h3>
+        <p class="science-desc" data-i18n="scienceDesc2">Durch schnelle Schnitte, Jump Cuts, Musik-Sync und Untertitel halten wir die Retention hoch. Hohe Completion-Rates signalisieren dem Algorithmus extreme Relevanz.</p>
+      </div>
+      <div class="science-card">
+        <div class="science-icon"><i class="fas fa-share-alt"></i></div>
+        <h3 class="science-title" data-i18n="scienceTitle3">Loop- &amp; Share-Optimierung</h3>
+        <p class="science-desc" data-i18n="scienceDesc3">Nahtlose Loops sorgen für Mehrfach-Aufrufe. Der Call-to-Action regt gezielt zum Teilen an (40% Algorithmus-Gewicht), was die virale Verbreitung exponentiell beschleunigt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTO-SLIDING VERTICAL REEL PORTFOLIO -->
+<section id="reel">
+  <div class="container">
+    <div class="section-header reveal" style="margin-bottom: 24px;">
+      <span class="eyebrow" data-i18n="reelEyebrow">Video Portfolio</span>
+      <h2 class="display-lg" data-i18n="reelTitle">Reel Showcase</h2>
+      <p class="body-lg" data-i18n="reelSub">Automatisch scrollende Übersicht aller Reels. Fahre mit der Maus über ein Video, um es abzuspielen.</p>
+    </div>
+  </div>
+
+  <!-- Marquee Container -->
+  <div class="marquee-container reveal">
+    <div class="marquee-track" id="marqueeTrack">
+      <!-- 8 vertical reels cards -->
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/La-Fiamma_Schöneberg/002_Viral_Video_02.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/La-Fiamma_Schöneberg/002_Viral_Video_02.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">La-Fiamma Schöneberg</span>
+          <span class="reel-vertical-metric"><i class="fas fa-eye"></i> 200K+ Views</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/Ehil_Restaurent/Ehil Tanitim_Final.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/Ehil_Restaurent/Ehil Tanitim_Final.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">Ehil Restaurant</span>
+          <span class="reel-vertical-metric"><i class="fas fa-eye"></i> 150K+ Views</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/La-Fiamma_Schöneberg/007_Gen_Z_Viral_Video.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/La-Fiamma_Schöneberg/007_Gen_Z_Viral_Video.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">La-Fiamma Gen-Z</span>
+          <span class="reel-vertical-metric"><i class="fas fa-eye"></i> 200K+ Views</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/Ehil_Restaurent/Ramazan Werbevideo 1_Final.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/Ehil_Restaurent/Ramazan Werbevideo 1_Final.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">Ehil Ramadan</span>
+          <span class="reel-vertical-metric"><i class="fas fa-eye"></i> 200K+ Views</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/La-Fiamma_Schöneberg/008_Vlog_Style_Video_002.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/La-Fiamma_Schöneberg/008_Vlog_Style_Video_002.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">La-Fiamma Vlog</span>
+          <span class="reel-vertical-metric"><i class="fas fa-eye"></i> 120K+ Views</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/La-Fiamma_Gneisenaustraße/Lafiamma_Edit.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/La-Fiamma_Gneisenaustraße/Lafiamma_Edit.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">La-Fiamma Gneisenau</span>
+          <span class="reel-vertical-metric"><i class="fas fa-eye"></i> UGC Network</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/GoldenPack/SnapInsta.to_AQMyFMXc3pw71buoE4czH1zte0l0jbFXuiHDGN_hXiR3YWEKgZHYI0nunPh2AFd1gr-b_D7ZcTwqLz9cAsPK7IZUyMswZn3DAslbZR8.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/GoldenPack/SnapInsta.to_AQMyFMXc3pw71buoE4czH1zte0l0jbFXuiHDGN_hXiR3YWEKgZHYI0nunPh2AFd1gr-b_D7ZcTwqLz9cAsPK7IZUyMswZn3DAslbZR8.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">Goldenpack Recruiting</span>
+          <span class="reel-vertical-metric"><i class="fas fa-user-plus"></i> 160+ Hires</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/Eos_Fahrzeugtechnik/SnapInsta.to_AQOA6g2PWkkF02bH8zL4UaEUT3u7F3quLXZLhVNiVdcOFQCehkm6BBZ-TEkmv_ePtxDKs4mccS1KuQkjZBqoqv2QUJEpstMUa5-wnJs.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/Eos_Fahrzeugtechnik/SnapInsta.to_AQOA6g2PWkkF02bH8zL4UaEUT3u7F3quLXZLhVNiVdcOFQCehkm6BBZ-TEkmv_ePtxDKs4mccS1KuQkjZBqoqv2QUJEpstMUa5-wnJs.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">Eos Fahrzeugtechnik</span>
+          <span class="reel-vertical-metric"><i class="fas fa-check"></i> Completed</span>
+        </div>
+      </div>
+      
+      <!-- Duplicate set for infinite loop scrolling -->
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/La-Fiamma_Schöneberg/002_Viral_Video_02.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/La-Fiamma_Schöneberg/002_Viral_Video_02.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">La-Fiamma Schöneberg</span>
+          <span class="reel-vertical-metric"><i class="fas fa-eye"></i> 200K+ Views</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/Ehil_Restaurent/Ehil Tanitim_Final.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/Ehil_Restaurent/Ehil Tanitim_Final.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">Ehil Restaurant</span>
+          <span class="reel-vertical-metric"><i class="fas fa-eye"></i> 150K+ Views</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/La-Fiamma_Schöneberg/007_Gen_Z_Viral_Video.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/La-Fiamma_Schöneberg/007_Gen_Z_Viral_Video.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">La-Fiamma Gen-Z</span>
+          <span class="reel-vertical-metric"><i class="fas fa-eye"></i> 200K+ Views</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/Ehil_Restaurent/Ramazan Werbevideo 1_Final.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/Ehil_Restaurent/Ramazan Werbevideo 1_Final.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">Ehil Ramadan</span>
+          <span class="reel-vertical-metric"><i class="fas fa-eye"></i> 200K+ Views</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/La-Fiamma_Schöneberg/008_Vlog_Style_Video_002.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/La-Fiamma_Schöneberg/008_Vlog_Style_Video_002.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">La-Fiamma Vlog</span>
+          <span class="reel-vertical-metric"><i class="fas fa-eye"></i> 120K+ Views</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/La-Fiamma_Gneisenaustraße/Lafiamma_Edit.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/La-Fiamma_Gneisenaustraße/Lafiamma_Edit.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">La-Fiamma Gneisenau</span>
+          <span class="reel-vertical-metric"><i class="fas fa-eye"></i> UGC Network</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/GoldenPack/SnapInsta.to_AQMyFMXc3pw71buoE4czH1zte0l0jbFXuiHDGN_hXiR3YWEKgZHYI0nunPh2AFd1gr-b_D7ZcTwqLz9cAsPK7IZUyMswZn3DAslbZR8.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/GoldenPack/SnapInsta.to_AQMyFMXc3pw71buoE4czH1zte0l0jbFXuiHDGN_hXiR3YWEKgZHYI0nunPh2AFd1gr-b_D7ZcTwqLz9cAsPK7IZUyMswZn3DAslbZR8.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">Goldenpack Recruiting</span>
+          <span class="reel-vertical-metric"><i class="fas fa-user-plus"></i> 160+ Hires</span>
+        </div>
+      </div>
+      <div class="reel-vertical-card" onclick="openLightbox('Videos I made/Eos_Fahrzeugtechnik/SnapInsta.to_AQOA6g2PWkkF02bH8zL4UaEUT3u7F3quLXZLhVNiVdcOFQCehkm6BBZ-TEkmv_ePtxDKs4mccS1KuQkjZBqoqv2QUJEpstMUa5-wnJs.mp4')">
+        <video muted loop playsinline preload="none"><source src="Videos I made/Eos_Fahrzeugtechnik/SnapInsta.to_AQOA6g2PWkkF02bH8zL4UaEUT3u7F3quLXZLhVNiVdcOFQCehkm6BBZ-TEkmv_ePtxDKs4mccS1KuQkjZBqoqv2QUJEpstMUa5-wnJs.mp4" type="video/mp4"></video>
+        <div class="reel-play-indicator"><i class="fas fa-expand"></i></div>
+        <div class="reel-vertical-info">
+          <span class="reel-vertical-client">Eos Fahrzeugtechnik</span>
+          <span class="reel-vertical-metric"><i class="fas fa-check"></i> Completed</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Simulated live campaign growth tracker for more social proof -->
+  <div class="container reveal reveal-delay-1">
+    <div class="live-tracker-card">
+      <div>
+        <span class="live-badge"><span class="pulse-dot"></span> Live Tracker</span>
+        <h3 class="display-md" style="margin-bottom: 8px;" data-i18n="trackerTitle">Live Kampagnen Tracker (Simuliert)</h3>
+        <p class="live-desc" style="margin-bottom: 24px;" data-i18n="trackerDesc">Simulierte Live-Daten basierend auf der durchschnittlichen täglichen Performance aller Kampagnen.</p>
+        <div>
+          <div style="font-size:11px;color:var(--ink-muted);text-transform:uppercase;font-weight:700;letter-spacing:1px;margin-bottom:4px;" data-i18n="trackerLabel">Generierte Views (Echtzeit)</div>
+          <div class="live-counter-val" id="liveViewsCounter">760,000</div>
+        </div>
+      </div>
+      <div class="live-progress-list">
+        <div class="progress-bar-item">
+          <div class="progress-bar-info">
+            <span>Imren Börekhaus</span>
+            <span style="color:var(--gradient-violet);">400K+ Views</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 85%; background: var(--gradient-violet);"></div>
+          </div>
+        </div>
+        <div class="progress-bar-item">
+          <div class="progress-bar-info">
+            <span>Ehil Restaurant</span>
+            <span style="color:var(--gradient-orange);">200K+ Views</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 65%; background: var(--gradient-orange);"></div>
+          </div>
+        </div>
+        <div class="progress-bar-item">
+          <div class="progress-bar-info">
+            <span>La-Fiamma Schöneberg</span>
+            <span style="color:var(--gradient-magenta);">200K+ Views</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" style="width: 65%; background: var(--gradient-magenta);"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="eyebrow" style="display:block;margin-bottom:16px;" data-i18n="aboutEyebrow">Über mich</span>
+        <h2 class="display-lg" style="margin-bottom:24px;" data-i18n="aboutTitle">Ich bin Furkan.<br>Ich baue Brands.</h2>
+        <p data-i18n="aboutDesc1">Ich bin Social Media Creator und Video Marketer aus Berlin. <strong>Meine Spezialität: Content der nicht nur gut aussieht, sondern echte Ergebnisse liefert</strong> – mehr Views, mehr Kunden, mehr Umsatz.</p>
+        <p data-i18n="aboutDesc2">Von viralen Reels für kleine Restaurants bis zu kompletten Recruiting-Kampagnen für mittelständische Unternehmen – ich kenne beide Welten und baue Strategien die funktionieren.</p>
+        <div class="skills-grid" style="margin-top:28px;">
+          <span class="skill-pill">📱 Social Media Strategy</span>
+          <span class="skill-pill">🎬 Video Production</span>
+          <span class="skill-pill">🎯 Content Marketing</span>
+          <span class="skill-pill">👥 UGC Networks</span>
+          <span class="skill-pill">📊 Analytics</span>
+          <span class="skill-pill">🤖 AI Automation</span>
+          <span class="skill-pill">🔥 Viral Content</span>
+          <span class="skill-pill">📈 Kampagnenmanagement</span>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;">
+          <a href="https://www.instagram.com/sueleymanf.k/" target="_blank" class="social-link">
+            <i class="fab fa-instagram"></i> @sueleymanf.k
+          </a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="about-card">
+          <div class="about-avatar">FK</div>
+          <div class="about-name">Furkan Kocak</div>
+          <div class="about-role">Social Media Creator & Video Marketer · Berlin</div>
+          <div class="about-stats">
+            <div class="about-stat">
+              <div class="about-stat-num">760K+</div>
+              <div class="about-stat-label">Views</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">6</div>
+              <div class="about-stat-label">Kunden</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">100%</div>
+              <div class="about-stat-label">Erfolg</div>
+            </div>
+          </div>
+          <div style="padding:16px;background:var(--surface-elevated);border-radius:12px;border:1px solid var(--hairline);margin-bottom:20px;">
+            <div style="font-size:12px;color:var(--ink-muted);margin-bottom:8px;font-weight:600;letter-spacing:1px;text-transform:uppercase;" data-i18n="aboutActiveClients">Aktuelle Kunden</div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="font-size:13px;">La-Fiamma Schöneberg</span>
+                <span style="font-size:11px;padding:2px 8px;background:rgba(34,197,94,0.15);color:#4ade80;border-radius:999px;font-weight:600;">Aktiv</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="font-size:13px;">Imren Börekhaus</span>
+                <span style="font-size:11px;padding:2px 8px;background:rgba(34,197,94,0.15);color:#4ade80;border-radius:999px;font-weight:600;">Aktiv</span>
+              </div>
+            </div>
+          </div>
+          <a href="https://www.instagram.com/sueleymanf.k/" target="_blank" class="btn-primary" style="width:100%;justify-content:center;" data-i18n="aboutCardButton">
+            <i class="fab fa-instagram"></i> Instagram öffnen
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-content reveal">
+      <span class="eyebrow" data-i18n="ctaEyebrow">Bereit für Wachstum?</span>
+      <h2 class="display-xl" data-i18n="ctaTitle">Lass uns dein Business viral machen.</h2>
+      <p data-i18n="ctaSub">Kein langer Vertrag, kein Risiko. Wir sprechen kurz über dein Ziel – und ich sage dir ehrlich ob ich helfen kann.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/qr/DVCZ6EKUKMB5J1" target="_blank" class="btn-primary" style="font-size:16px;padding:14px 32px;" data-i18n="ctaBtn1">
+          <i class="fab fa-whatsapp"></i> Jetzt per WhatsApp kontaktieren
+        </a>
+        <a href="#projects" class="btn-secondary" style="font-size:16px;padding:14px 32px;" data-i18n="ctaBtn2">Mehr Projekte sehen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">FK<span>.</span></div>
+      <div class="footer-copy">© 2026 Furkan Kocak · Social Media Creator Berlin</div>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/sueleymanf.k/" target="_blank">Instagram</a>
+        <a href="#projects">Projekte</a>
+        <a href="#cta">Kontakt</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX FOR VERTICAL VIDEO PLAYBACK -->
+<div id="lightbox">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
+    <video id="lightboxVideo" controls style="width:100%;border-radius:16px;aspect-ratio:9/16;object-fit:cover;"></video>
+  </div>
+</div>
+
+<script>
+// ===== TRANSLATIONS DICTIONARY =====
+const i18n = {
+  de: {
+    navProjects: "Projekte",
+    navAnalytics: "Ergebnisse",
+    navReel: "Videos",
+    navAbout: "Über mich",
+    navContactBtn: "Kontakt",
+    heroEyebrow: '<span class="dot"></span> Social Media Creator & Video Marketer · Berlin',
+    heroTitle: 'Ich mache dein<br><span class="line-accent">Business viral.</span>',
+    heroSub: 'Echte Ergebnisse. Kein Bullshit. Ich produziere Content der konvertiert — von viralen Reels bis zu kompletten Kampagnen, die deinen Umsatz steigern.',
+    heroCta1: '<i class="fas fa-play"></i> Meine Arbeit sehen',
+    heroCta2: '<i class="fab fa-whatsapp"></i> Gespräch vereinbaren',
+    proofViews: 'Views generiert',
+    proofClients: 'Zufriedene Kunden',
+    proofHires: 'Neue Mitarbeiter für Kunden',
+    proofSuccess: 'Erfolgsquote der Kampagnen',
+    statViews: 'Gesamte Views',
+    statImren: 'Views – Imren Börekhaus',
+    statGolden: 'Neue Stellen – Goldenpack',
+    statActive: 'Aktive Partnerships',
+    projectEyebrow: 'Meine Projekte',
+    projectTitle: 'Echte Kunden. Echte Ergebnisse.',
+    projectSub: 'Von kleinen Restaurants bis zu großen Logistikfirmen – hier sind die Kampagnen die ich gebaut und geliefert habe.',
+    tagTop: '<i class="fas fa-fire"></i> Top Performer',
+    tagAusgebucht: '<i class="fas fa-chart-line"></i> Ausgebucht',
+    tagRecruiting: '<i class="fas fa-users"></i> Recruiting',
+    tagKoop: '<i class="fas fa-handshake"></i> Laufende Kooperation',
+    tagLaunch: '<i class="fas fa-rocket"></i> Launch Marketing',
+    tagDone: '<i class="fas fa-check-circle"></i> Abgeschlossen',
+    descImren: 'Aus einem kleinen Familienrestaurant wurde ein viraler Instagram-Hit. Das Business wuchs von 1 auf 3–4 Mitarbeiter durch gezielten Content.',
+    descEhil: 'Ramadan komplett ausgebucht durch eine strategische Videokampagne mit 14 professionellen Videos.',
+    descGolden: 'Eine komplette Recruiting-Kampagne die über 160 neue Mitarbeiter für Goldenpack Berlin gewann.',
+    descSchoneberg: 'Langfristige Zusammenarbeit mit kontinuierlichem Wachstum. Werbvideos, Viral Content und Kampagnenmanagement.',
+    descGneisenau: 'Neueröffnung eines Restaurants – komplettes Launch-Marketing und Aufbau eines UGC Creator-Netzwerks.',
+    descEos: 'Vollständiges Kampagnenmanagement für einen Berliner Fahrzeugtechnik-Betrieb. Strategie, Content & Distribution.',
+    analyticsEyebrow: 'Analytics & Science',
+    analyticsTitle: 'Die Zahlen sprechen für sich.',
+    analyticsSub: 'Datengetriebener Content der virale Algorithmen knackt. Hier ist die genaue Wissenschaft hinter unseren Reels.',
+    chart1Title: 'Views pro Kunde',
+    chart2Title: 'Algorithmus-Gewichtung',
+    chart3Title: 'Hook & Retentions-Kurve',
+    scienceTitle1: '3-Sekunden Hook',
+    scienceDesc1: 'Die ersten 3 Sekunden entscheiden alles. Wir verwenden dynamische Visuals, Text-Overlays und psychologische Hook-Formeln, um die Zuschauer-Aufmerksamkeit sofort zu sichern.',
+    scienceTitle2: 'Audience Retention (Pacing)',
+    scienceDesc2: 'Durch schnelle Schnitte, Jump Cuts, Musik-Sync und Untertitel halten wir die Retention hoch. Hohe Completion-Rates signalisieren dem Algorithmus extreme Relevanz.',
+    scienceTitle3: 'Loop- & Share-Optimierung',
+    scienceDesc3: 'Nahtlose Loops sorgen für Mehrfach-Aufrufe. Der Call-to-Action regt gezielt zum Teilen an (40% Algorithmus-Gewicht), was die virale Verbreitung exponentiell beschleunigt.',
+    reelEyebrow: 'Video Portfolio',
+    reelTitle: 'Reel Showcase',
+    reelSub: 'Automatisch scrollende Übersicht aller Reels. Fahre mit der Maus über ein Video, um es abzuspielen.',
+    trackerTitle: 'Live Kampagnen Tracker (Simuliert)',
+    trackerDesc: 'Simulierte Live-Daten basierend auf der durchschnittlichen täglichen Performance aller Kampagnen.',
+    trackerLabel: 'Generierte Views (Echtzeit)',
+    aboutEyebrow: 'Über mich',
+    aboutTitle: 'Ich bin Furkan.<br>Ich baue Brands.',
+    aboutDesc1: 'Ich bin Social Media Creator und Video Marketer aus Berlin. <strong>Meine Spezialität: Content der nicht nur gut aussieht, sondern echte Ergebnisse liefert</strong> – mehr Views, mehr Kunden, mehr Umsatz.',
+    aboutDesc2: 'Von viralen Reels für kleine Restaurants bis zu kompletten Recruiting-Kampagnen für mittelständische Unternehmen – ich kenne beide Welten und baue Strategien die funktionieren.',
+    aboutActiveClients: 'Aktuelle Kunden',
+    aboutCardButton: '<i class="fab fa-instagram"></i> Instagram öffnen',
+    ctaEyebrow: 'Bereit für Wachstum?',
+    ctaTitle: 'Lass uns dein Business viral machen.',
+    ctaSub: 'Kein langer Vertrag, kein Risiko. Wir sprechen kurz über dein Ziel – und ich sage dir ehrlich ob ich helfen kann.',
+    ctaBtn1: '<i class="fab fa-whatsapp"></i> Jetzt per WhatsApp kontaktieren',
+    ctaBtn2: 'Mehr Projekte sehen'
+  },
+  en: {
+    navProjects: "Projects",
+    navAnalytics: "Results",
+    navReel: "Videos",
+    navAbout: "About Me",
+    navContactBtn: "Contact",
+    heroEyebrow: '<span class="dot"></span> Social Media Creator & Video Marketer · Berlin',
+    heroTitle: 'I make your<br><span class="line-accent">Business go viral.</span>',
+    heroSub: 'Real results. No bullshit. I produce content that converts — from viral reels to complete campaigns that boost your bottom line.',
+    heroCta1: '<i class="fas fa-play"></i> See My Work',
+    heroCta2: '<i class="fab fa-whatsapp"></i> Book a Call',
+    proofViews: 'Views Generated',
+    proofClients: 'Happy Clients',
+    proofHires: 'New Employees Recruited',
+    proofSuccess: 'Campaign Success Rate',
+    statViews: 'Total Views',
+    statImren: 'Views – Imren Börekhaus',
+    statGolden: 'New Employees – Goldenpack',
+    statActive: 'Active Partnerships',
+    projectEyebrow: "My Work",
+    projectTitle: "Real Clients. Real Results.",
+    projectSub: "From boutique restaurants to mid-size industrial packaging plants – here are campaigns built and delivered by me.",
+    tagTop: '<i class="fas fa-fire"></i> Top Performer',
+    tagAusgebucht: '<i class="fas fa-chart-line"></i> Fully Booked',
+    tagRecruiting: '<i class="fas fa-users"></i> Recruiting',
+    tagKoop: '<i class="fas fa-handshake"></i> Ongoing Partnership',
+    tagLaunch: '<i class="fas fa-rocket"></i> Launch Marketing',
+    tagDone: '<i class="fas fa-check-circle"></i> Completed',
+    descImren: 'Turned a small family-run diner into a viral Instagram hit. The business scaled from 1 to 3–4 full-time staff solely due to targeted reels.',
+    descEhil: 'Ramadan completely booked out through a strategic campaign featuring 14 highly customized promotional videos.',
+    descGolden: 'A full recruiting funnel that onboarded and successfully hired over 160 new warehouse employees.',
+    descSchoneberg: 'Long-term ongoing partnership with consistent community growth, creative ad content, and analytics monitoring.',
+    descGneisenau: 'New restaurant opening – complete launch strategy, local influencer integrations, and UGC creator network setup.',
+    descEos: 'Entire production and campaign management for a vehicle technology facility in Berlin. Strategy, creative design, and posting.',
+    analyticsEyebrow: "Analytics & Science",
+    analyticsTitle: "The Science of Virality.",
+    analyticsSub: "Data-driven content engineered to crack vertical algorithms. This is how we hook, engage, and convert viewers.",
+    chart1Title: "Views per Client",
+    chart2Title: "Algorithm Weights",
+    chart3Title: "Hook & Retention Curve",
+    scienceTitle1: "3-Second Hook",
+    scienceDesc1: "The first 3 seconds decide everything. We utilize dynamic visuals, rapid text overlays, and psychological hook models to capture user attention.",
+    scienceTitle2: "Audience Retention (Pacing)",
+    scienceDesc2: "Through fast-paced editing, jump cuts, synchronized audio, and custom captions, we hold watch time. Retention signals importance to algorithms.",
+    scienceTitle3: "Loop & Share Optimization",
+    scienceDesc3: "Seamless loop endings trigger double-views. The CTAs are optimized to trigger shares (40% algorithm weight), sparking exponential reach.",
+    reelEyebrow: "Portfolio",
+    reelTitle: "Reel Showcase",
+    reelSub: "Infinite auto-scrolling reels catalog. Hover over any card to play it muted.",
+    trackerTitle: "Live Campaign Tracker (Simulated)",
+    trackerDesc: "Simulated real-time tracking based on daily metrics averaged across all campaigns.",
+    trackerLabel: "Generated Views (Realtime)",
+    aboutEyebrow: "About Me",
+    aboutTitle: "I am Furkan.<br>I Build Brands.",
+    aboutDesc1: "I am a social media creator and video marketer based in Berlin. <strong>My specialty: creating content that doesn't just look sleek, but drives real results</strong> – views, hires, and customers.",
+    aboutDesc2: "From viral organic reels for family diners to highly targeted paid recruiting funnels for logistics companies – I construct strategies that actually convert.",
+    aboutActiveClients: "Active Clients",
+    aboutCardButton: '<i class="fab fa-instagram"></i> Open Instagram',
+    ctaEyebrow: "Ready to Scale?",
+    ctaTitle: "Let's Make Your Brand Go Viral.",
+    ctaSub: "No long contracts, no risk. We talk about your targets – and I will tell you honestly if I can deliver for your business.",
+    ctaBtn1: '<i class="fab fa-whatsapp"></i> Chat on WhatsApp Now',
+    ctaBtn2: "View Projects"
+  }
+};
+
+let currentLang = 'de';
+
+function changeLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+  });
+  
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (i18n[lang] && i18n[lang][key]) {
+      el.innerHTML = i18n[lang][key];
+    }
+  });
+
+  // Re-render chart legends/titles in correct language if chart instances exist
+  updateChartsLanguage(lang);
+}
+
+// ===== NAVBAR SCROLL =====
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// ===== SCROLL REVEAL =====
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.1 });
+revealEls.forEach(el => observer.observe(el));
+
+// ===== COUNT-UP ANIMATION =====
+function animateCount(el) {
+  const target = parseInt(el.dataset.count);
+  const suffix = el.dataset.suffix || '';
+  const duration = 1800;
+  const start = performance.now();
+  const isLarge = target >= 1000;
+  function update(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 3);
+    const current = Math.floor(ease * target);
+    if (isLarge) {
+      el.textContent = (current / 1000).toFixed(0) + 'K' + suffix.replace('K+','').replace('+','') + '+';
+    } else {
+      el.textContent = current + suffix;
+    }
+    if (progress < 1) requestAnimationFrame(update);
+    else el.textContent = isLarge ? (target/1000) + 'K+' : target + suffix;
+  }
+  requestAnimationFrame(update);
+}
+
+const countObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { animateCount(e.target); countObs.unobserve(e.target); }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
+
+// ===== VIDEO HOVER PLAY IN MARQUEE =====
+document.querySelectorAll('.reel-vertical-card').forEach(card => {
+  const vid = card.querySelector('video');
+  card.addEventListener('mouseenter', () => {
+    if (vid) {
+      // Preload video on hover if not already loaded, then play
+      vid.setAttribute('preload', 'auto');
+      vid.play().catch(err => console.log("Play interrupted or blocked: ", err));
+    }
+  });
+  card.addEventListener('mouseleave', () => {
+    if (vid) {
+      vid.pause();
+    }
+  });
+});
+
+// ===== LIGHTBOX =====
+function openLightbox(src) {
+  const lb = document.getElementById('lightbox');
+  const lv = document.getElementById('lightboxVideo');
+  lv.src = src;
+  lb.classList.add('open');
+  lv.play().catch(err => console.log("Play failed: ", err));
+}
+function closeLightbox() {
+  const lb = document.getElementById('lightbox');
+  const lv = document.getElementById('lightboxVideo');
+  lb.classList.remove('open');
+  lv.pause();
+  lv.src = '';
+}
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) closeLightbox();
+});
+
+// ===== SIMULATED LIVE VIEW COUNTER =====
+let currentViews = 760000;
+const liveViewsEl = document.getElementById('liveViewsCounter');
+setInterval(() => {
+  // Add 1 to 5 random views every 1.5 seconds
+  const added = Math.floor(Math.random() * 5) + 1;
+  currentViews += added;
+  liveViewsEl.textContent = currentViews.toLocaleString('de-DE') + ' +';
+}, 1500);
+
+// ===== CHARTS CONFIGURATION =====
+Chart.defaults.color = '#8a8d90';
+Chart.defaults.borderColor = '#1f2122';
+
+let viewsChart, algoChart, retentionChart;
+
+function buildCharts() {
+  // Chart 1: Bar Chart - Views
+  viewsChart = new Chart(document.getElementById('chartViews'), {
+    type: 'bar',
+    data: {
+      labels: ['Imren', 'Ehil', 'La-Fiamma S.', 'Goldenpack', 'La-Fiamma G.', 'Eos Fahrzeug'],
+      datasets: [{
+        data: [400, 200, 200, 80, 60, 20],
+        backgroundColor: [
+          'rgba(106,76,245,0.8)', 'rgba(255,122,61,0.8)', 'rgba(212,77,240,0.8)',
+          'rgba(34,197,94,0.8)', 'rgba(0,153,255,0.8)', 'rgba(255,85,119,0.8)'
+        ],
+        borderRadius: 6,
+        borderSkipped: false
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false }, tooltip: {
+        callbacks: { label: ctx => ctx.raw + 'K Views' }
+      }},
+      scales: {
+        x: { grid: { display: false }, ticks: { font: { size: 10 } } },
+        y: { grid: { color: 'rgba(255,255,255,0.02)' }, ticks: { callback: v => v + 'K' } }
+      }
+    }
+  });
+
+  // Chart 2: Doughnut - Algorithm Weights
+  algoChart = new Chart(document.getElementById('chartAlgorithm'), {
+    type: 'doughnut',
+    data: {
+      labels: ['Shares (Teilen)', 'Retention (Watch-time)', 'Loops (Wiederholung)', 'Comments (Kommentare)', 'Likes'],
+      datasets: [{
+        data: [40, 30, 15, 10, 5],
+        backgroundColor: [
+          'rgba(212,77,240,0.85)', 'rgba(106,76,245,0.85)', 'rgba(255,122,61,0.85)',
+          'rgba(0,153,255,0.85)', 'rgba(34,197,94,0.85)'
+        ],
+        borderWidth: 0,
+        hoverOffset: 6
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: '65%',
+      plugins: { 
+        legend: { 
+          position: 'bottom', 
+          labels: { boxWidth: 8, padding: 8, font: { size: 9 } } 
+        } 
+      }
+    }
+  });
+
+  // Chart 3: Line Chart - Retention Curve (Hook vs normal)
+  retentionChart = new Chart(document.getElementById('chartRetention'), {
+    type: 'line',
+    data: {
+      labels: ['0s', '3s', '6s', '10s', '15s', '30s (End)'],
+      datasets: [
+        {
+          label: 'Viral Video (Hook + Pacing)',
+          data: [100, 92, 85, 78, 70, 62],
+          borderColor: '#d44df0',
+          backgroundColor: 'rgba(212,77,240,0.05)',
+          tension: 0.3,
+          borderWidth: 2.5,
+          fill: true
+        },
+        {
+          label: 'Standard Video',
+          data: [100, 55, 38, 28, 20, 12],
+          borderColor: '#4c4e50',
+          borderDash: [5, 5],
+          tension: 0.3,
+          borderWidth: 1.5,
+          fill: false
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { 
+        legend: { 
+          position: 'bottom', 
+          labels: { boxWidth: 12, font: { size: 9 } } 
+        } 
+      },
+      scales: {
+        x: { grid: { display: false }, ticks: { font: { size: 10 } } },
+        y: { grid: { color: 'rgba(255,255,255,0.02)' }, ticks: { callback: v => v + '%' } }
+      }
+    }
+  });
+}
+
+function updateChartsLanguage(lang) {
+  if (!algoChart || !retentionChart) return;
+  
+  if (lang === 'en') {
+    algoChart.data.labels = ['Shares', 'Retention (Watch-time)', 'Loops (Replays)', 'Comments', 'Likes'];
+    retentionChart.data.datasets[0].label = 'Viral Video (Hook + Pacing)';
+    retentionChart.data.datasets[1].label = 'Standard Video';
+  } else {
+    algoChart.data.labels = ['Shares (Teilen)', 'Retention (Watch-time)', 'Loops (Wiederholung)', 'Comments (Kommentare)', 'Likes'];
+    retentionChart.data.datasets[0].label = 'Viral Video (Hook + Pacing)';
+    retentionChart.data.datasets[1].label = 'Standard Video';
+  }
+  
+  algoChart.update();
+  retentionChart.update();
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  buildCharts();
+});
+</script>
+</body>
+</html>
