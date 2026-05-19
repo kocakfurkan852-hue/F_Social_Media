@@ -884,6 +884,90 @@ footer {
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
+/* Mobile Menu Button & Overlay */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20px;
+  height: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 200;
+  padding: 0;
+  margin-left: 16px;
+}
+.menu-btn .bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--ink);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Mobile Menu Container */
+.mobile-menu {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(6, 6, 6, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(-20px);
+}
+.mobile-menu.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.mobile-links a {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--ink-muted);
+  transition: color 0.2s, transform 0.2s;
+  letter-spacing: -0.5px;
+}
+.mobile-links a:hover {
+  color: var(--ink);
+  transform: scale(1.05);
+}
+.mobile-menu-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 80%;
+  max-width: 280px;
+}
+
+/* Hamburger animation on menu open */
+.menu-open {
+  overflow: hidden; /* Disable page scroll when menu is open */
+}
+.menu-open .menu-btn .bar:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+.menu-open .menu-btn .bar:nth-child(2) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
 /* === RESPONSIVE === */
 @media (max-width: 1024px) {
   .bento-grid { grid-template-columns: repeat(2, 1fr); }
@@ -891,24 +975,62 @@ footer {
   .charts-grid { grid-template-columns: 1fr; }
   .science-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
-  .stat-item { border-bottom: 1px solid var(--hairline); }
+  .stat-item {
+    border-bottom: 1px solid var(--hairline);
+    border-right: 1px solid var(--hairline);
+  }
+  .stat-item:nth-child(2n) { border-right: none; }
+  .stat-item:nth-child(3), .stat-item:nth-child(4) { border-bottom: none; }
   .live-tracker-card { grid-template-columns: 1fr; gap: 24px; }
 }
 
 @media (max-width: 768px) {
   :root { --section: 64px; }
+  .display-xxl { font-size: 38px; letter-spacing: -1.5px; }
+  .display-xl { font-size: 30px; letter-spacing: -1px; }
+  .display-lg { font-size: 24px; letter-spacing: -0.8px; }
+  .display-md { font-size: 20px; letter-spacing: -0.5px; }
+
   .nav-links { display: none; }
+  .nav-cta .btn-primary,
+  .nav-cta .btn-secondary { display: none; } /* Show in overlay instead */
+  .menu-btn { display: flex; }
+
+  .hero-social-proof {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 48px;
+    padding-top: 32px;
+  }
+  .proof-divider { display: none; }
+  .proof-number { font-size: 24px; }
+
   .bento-grid { grid-template-columns: 1fr; }
   .bento-card.span-2, .bento-card.span-row-2 { grid-column: span 1; grid-row: span 1; }
+  .card-inner { padding: 20px; }
+  .card-result { font-size: 32px; }
+
+  .live-tracker-card { padding: 24px 20px; }
+  .live-counter-val { font-size: 36px; }
+
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .hero-social-proof { gap: 20px; }
-  .proof-divider { display: none; }
-  .footer-inner { flex-direction: column; text-align: center; }
+  .about-card { padding: 24px 20px; }
+  .about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .about-stat-num { font-size: 20px; }
+
+  .footer-inner { flex-direction: column; text-align: center; gap: 24px; }
   .whatsapp-float { bottom: 20px; right: 20px; width: 50px; height: 50px; font-size: 24px; }
 }
 
 @media (max-width: 480px) {
   .stats-grid { grid-template-columns: 1fr 1fr; }
+  .hero-social-proof { grid-template-columns: 1fr 1fr; }
 }
 
 /* === REDUCED MOTION === */
